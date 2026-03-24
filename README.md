@@ -1,4 +1,4 @@
-# 🚩 Duy CTF Platform
+# 🚩 CTF Platform
 
 > Một nền tảng luyện tập Capture The Flag (CTF) hiện đại, được thiết kế với giao diện đậm chất hacker và hệ thống quản lý thử thách linh hoạt.
 
@@ -209,7 +209,7 @@ Sau đó tạo một **Pull Request** và mô tả thay đổi của bạn.
 
 ## 👨‍💻 Tác giả
 
-**Đỗ Đăng Duy**
+**Sezu**
 
 ---
 
