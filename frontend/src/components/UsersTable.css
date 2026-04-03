@@ -1,0 +1,133 @@
+.users-table-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.table-header h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.table-header p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Đảm bảo bảng không bị tràn màn hình trên màn nhỏ */
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.users-table th {
+  padding: 16px;
+  color: #94a3b8;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.users-table td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+/* Row Hover Effect */
+.users-table tbody tr {
+  transition: background 0.2s;
+}
+
+.users-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Chỉnh màu chữ nhanh */
+.text-white { color: #f8fafc; }
+.text-gray { color: #94a3b8; }
+.text-purple { color: #a78bfa; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+
+/* Badges cho Role và Status */
+.role-badge, .status-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.role-badge.admin { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.role-badge.user { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
+
+.status-badge.active { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+.status-badge.banned { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+
+/* Nút Action trong bảng */
+.action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 12px;
+  transition: color 0.2s;
+}
+.action-btn.edit { color: #60a5fa; }
+.action-btn.edit:hover { color: #3b82f6; text-decoration: underline; }
+.action-btn.delete { color: #f87171; }
+.action-btn.delete:hover { color: #ef4444; text-decoration: underline; }
+
+/* ===== PHÂN TRANG (PAGINATION) ===== */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.page-info {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.current-page {
+  color: #fff;
+  font-weight: 600;
+}
+
+.page-btn {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: #8b5cf6;
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #64748b;
+}
