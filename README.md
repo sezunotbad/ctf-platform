@@ -138,6 +138,8 @@ npm run dev
 ## 👨‍💻 Author
 
 Đỗ Đăng Duy - 24100187
+Bùi Duy Anh - 24100238
+
 
 ---
 
